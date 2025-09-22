@@ -5,9 +5,11 @@ public class Day_Efficacy{
 	private double weather;
 	
 	public double calcWeather(){
-		double[] weathers = {0.70, 0.75, 0.80, 0.85. 0.90, 0.95, 1.00};
+		double[] weathers = {0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.00};
+		String[] weather_names = {"Cloudy, 50 degrees", "Cloudy, 70 degrees", "Partly Cloudy, 60 degrees", "Partly Cloudy, 70 degrees", "Partly Cloudy, 80 degrees", "Sunny, 70 degrees", "Sunny, 80 degrees"};
 		int randomNum = (int)(Math.random()* 7);
-		return weathers[randomNum];
+		String return_weather[] = {weathers[randomNum], weather_names[randomNum]}; //will need to Inter.int_parse() on return_weather[0]
+		return return_weather[];
 	}
 	
 	public double day_efficacy(double weather, double price, double recipe_efficacy){
