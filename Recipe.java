@@ -1,4 +1,4 @@
-import java.util.Scanner
+import java.util.Scanner;
 public class Recipe{
     //vars
     
@@ -22,7 +22,7 @@ public class Recipe{
         int sugarCup = scan1.nextInt();
         temp = scan.nextLine();
 
-        return {lemCup,iceCup, sugarCup}
+        return {lemCup,iceCup, sugarCup};
 
 
            
